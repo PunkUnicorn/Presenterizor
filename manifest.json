@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Presenterizor",
+  "version": "0.1",
+  "icons": {
+    "128": "assets/icon_128.png"
+  },
+	"background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "name": "Click to change the icon's color"
+  },
+	"permissions": [
+   "activeTab",
+   "storage"
+  ]
+}
