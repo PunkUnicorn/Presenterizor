@@ -1,7 +1,13 @@
+# Presenterizor
+
+![Presenterizor](https://github.com/PunkUnicorn/Presenterizor/blob/master/assets/icon_128.png)
+
+*based on*
+
+## Keyboard Handler Sample
+
 <a target="_blank" href="https://chrome.google.com/webstore/detail/keyboard-handler-sample/pcbbaldjljokfnnkphllabnpolciapjc">![Try it now in CWS](https://raw.github.com/GoogleChrome/chrome-app-samples/master/tryitnowbutton.png "Click here to install this sample from the Chrome Web Store")</a>
 
-
-# Keyboard Handler Sample
 
 This sample handles all keyboard events (preventing default behavior) and
 maintains a dictionary of the state of each key.
