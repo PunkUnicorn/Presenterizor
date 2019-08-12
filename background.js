@@ -29,7 +29,10 @@ if(chrome.storage){
 				
 				if (presenterizorActivated) {
 					
-
+					if (typeof value.presenterizorInterval == 'undefined') {
+						value.presenterizorInterval = 6000;
+					}
+					
 					var newIntervalId = setInterval(function() {
 																		
 						chrome.storage.local.get("presenterizorCurrentTab", function (timerValue) {
@@ -40,9 +43,6 @@ if(chrome.storage){
 							
 							var presenterizorCurrentTab = timerValue.presenterizorCurrentTab + 1;
 							
-							if (typeof value.presenterizorInterval == 'undefined') {
-								value.presenterizorInterval = 6000;
-							}
 							
 							chrome.tabs.query({currentWindow: true}, function(tabarray) {
 							
